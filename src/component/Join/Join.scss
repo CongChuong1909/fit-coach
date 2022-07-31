@@ -1,0 +1,46 @@
+.join{
+    display: flex;
+    padding: 2rem;
+    gap: 10rem;
+}
+.left--j{
+    color: #fff;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    &>hr{
+        position: absolute;
+        width: 10rem;
+        border: 2px solid var(--orange);
+        border-radius: 20%;
+        margin-top: -10px;
+    }
+}
+.right--j{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &_email-contact{
+        display: flex;
+        gap: 4rem;
+        background-color: gray;
+        padding: 1rem 2rem;
+        &>input{
+            background-color: transparent;
+            outline: none;
+            border: none;
+            color: var(--lightgrayz);
+        }
+        &>input::placeholder{
+            color: var(--lightgray);
+        }
+
+        &>button{
+            background-color: var(--orange);
+            color: #fff;
+        }
+    }
+}

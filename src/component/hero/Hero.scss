@@ -1,0 +1,182 @@
+.hero{
+    display: flex;
+    justify-content: space-between;
+    .left--h{
+        padding: 2rem;
+        padding: 1.5rem;   
+        flex:3;
+        &_ad-bar{
+            margin-top: 4rem;
+            background-color: #363d42;
+            border-radius: 4rem;
+            width: fit-content;
+            padding: 20px 13px; 
+
+            text-transform: uppercase;
+            color: #fff;
+            position: relative;
+            display: flex;
+
+            align-items: center;
+            justify-content: flex-start;
+        } 
+
+        &_ad-bar> div{
+            position: absolute;
+            background-color: var(--orange);
+            width: 5rem;
+            height: 80%;
+
+            left: 8px;
+            border-radius: 3rem;
+            z-index: 1;
+        }
+        &_ad-bar> span{
+            z-index: 2;
+        }
+    }
+
+    // the title banner
+
+.left--h_ad-heading{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5;
+    text-transform: uppercase;
+
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: #fff;
+    padding: 2rem 0;
+    
+}
+
+.left--h_ad-heading> div> span{
+    padding: 2rem 0;
+}
+.left--h_ad-title{
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+    width: 80%;
+    padding-top: 2rem;
+}
+.left--h__figures{
+    display: flex;
+    gap: 3rem;
+    color: var(--gray);
+    & >div{
+        display: flex;
+        flex-direction: column;
+    }
+    &>div>span:nth-of-type(1){
+        font-size: 2rem;
+        color: #fff;
+    }
+}
+.left--h_banner-btn{
+    padding: 2rem 0;
+}
+.left--h_banner-btn> button{
+    margin-right: 1rem;
+}
+.left--h_banner-btn >button:nth-of-type(1){
+    color: #fff;
+    background-color: var(--orange);
+    width: 8rem;
+}
+.left--h_banner-btn >button:nth-of-type(2){
+    color: #fff;
+    background-color: transparent;
+    width: 8rem;
+    border: 2px solid var(--orange)
+}
+    .right--h{
+        flex: 1;
+        background-color: var(--orange);
+        position: relative;
+        &>button{
+            position: absolute;
+            right: 3rem;
+            top: 2rem;
+            color: #000;
+        }
+        &__heart-rase{
+            display: flex;
+            z-index: 2;
+            gap: 1rem;
+            width: fit-content;
+
+            background-color: var(--darkGrey);
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            padding: 1rem;
+
+            position: absolute;
+            right: 4rem;
+            border-radius: 5px;
+            top: 7rem;
+        }
+        &__heart-rase>img{
+            width: 2rem;
+        }
+        &__heart-rase:nth-child(2)
+        {
+            color: var(--gray);
+        }
+        &__heart-rase:nth-child(3)
+        {
+            color: #fff;
+            font-size: 1.5rem;
+        }
+        &__hero_image{
+            position: absolute;
+            top: 10rem;
+            right: 8rem;
+            width: 23rem;
+            z-index: 3;
+        }
+        &__hero_imageBack{
+            position: absolute;
+            top: 4rem;
+            right: 20rem;
+            z-index: -1;
+            width: 15rem;
+        }
+        &__calories{
+            display: flex;
+            gap: 2rem;
+            background-color: var(--caloryCard);
+            border-radius: 5px;
+
+            padding: 1rem;
+            width: fit-content;
+            position: absolute;
+            top: 32rem;
+            right: 28rem;
+            &>img{
+                width: 3rem;
+            }
+            &>div{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                &>:nth-child(1){
+                    color: var(--gray);
+                }
+                &>:nth-child(2){
+                    color: #fff;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+.blur-h{
+    width: 22rem;
+    height: 30rem; 
+    left: 1rem;
+}
